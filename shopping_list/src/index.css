@@ -1,4 +1,4 @@
-/* Общие стили */
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
   background-color: #f9f9f9;
@@ -13,7 +13,7 @@ h1 {
   margin-top: 20px;
 }
 
-/* Основной контейнер */
+
 .app {
   max-width: 800px;
   margin: 20px auto;
@@ -23,7 +23,7 @@ h1 {
   border-radius: 8px;
 }
 
-/* Форма добавления товара */
+
 .add-item-form {
   display: flex;
   flex-wrap: wrap;
@@ -59,7 +59,7 @@ h1 {
   background-color: #000000;
 }
 
-/* Фильтры */
+
 .filters {
   display: flex;
   justify-content: space-around;
@@ -82,7 +82,7 @@ h1 {
   color: #fff;
 }
 
-/* Списки */
+
 .grouped-list h2 {
   margin-top: 20px;
   color: #000000;
@@ -153,7 +153,7 @@ h1 {
   background-color: #e53935;
 }
 
-/* Общие стили для категорий */
+
 select, button {
   font-family: 'Roboto', Arial, sans-serif;
 }
