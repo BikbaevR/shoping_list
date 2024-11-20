@@ -1,0 +1,163 @@
+/* Общие стили */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  margin-top: 20px;
+}
+
+/* Основной контейнер */
+.app {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Форма добавления товара */
+.add-item-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-item-form input,
+.add-item-form select,
+.add-item-form button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.add-item-form input:focus,
+.add-item-form select:focus {
+  border-color: #000000;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.2);
+}
+
+.add-item-form button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-item-form button:hover {
+  background-color: #000000;
+}
+
+/* Фильтры */
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 10px 20px;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filters button:hover,
+.filters button.active {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Списки */
+.grouped-list h2 {
+  margin-top: 20px;
+  color: #000000;
+  font-size: 18px;
+  border-bottom: 2px solid #000000;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.item-list li:hover {
+  transform: scale(1.02);
+}
+
+.item-list li.purchased {
+  background-color: #e8f5e9;
+  text-decoration: line-through;
+  color: #666;
+}
+
+.item-list li span {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.item-list li button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item-list li button:first-child {
+  background-color: #000000;
+  color: white;
+}
+
+.item-list li button:first-child:hover {
+  background-color: #000000;
+}
+
+.item-list li button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.item-list li button:last-child:hover {
+  background-color: #e53935;
+}
+
+/* Общие стили для категорий */
+select, button {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+button.active {
+  font-weight: bold;
+}
